@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: rgb(223, 223, 223);
+        }
+
+        section {
+            background-color: #fff;
+            width: 1000px;
+            margin: 10vh auto;
+            padding: 10px 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        /* description section */
+        .container {
+            margin: 10vh 100px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        /* buttons section */
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .buttons button {
+            width: 10vw;
+            height: 5vh;
+            border-radius: 20px;
+            background-color: black;
+            color: #fff;
+            margin: 10px 0 20px 0;
+        }
+
+        .buttons button:hover {
+            cursor: pointer;
+        }
+
+        .buttons .cv-buttons {
+            display: flex;
+        }
+
+        .buttons .cv-buttons a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+
+        /* social media section */
+        .media-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .media-icons .icon {
+            margin: 0 10px;
+        }
+
+        /* Photo Section */
+        .photo {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .photo img {
+            width: 60%;
+        }
+
+        .photo .profile {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background-color: #fff;
+            width: 60%;
+        }
+
+        .photo .profile h3, 
+        .photo .profile p
+        {
+            text-align: center;
+        }
+
+
+    </style>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="description">
+                <h1>Hi! Welcome to my hut</h1>
+                <p>Nama saya Dionovan Ramadhani, saya adalah seorang Game Developer yang berfokus pada Unity Game Engine, Unreal Engine dan bahasa pemrograman C# dan C++. Saya memiliki minat pada Game Development sebagai game programmer. Saat ini saya ingin mencoba untuk menyelam sebagai Fullstack Developer</p>
+            </div>
+
+            <div class="buttons">
+                <button>Contact</button>
+                <div class="cv-buttons">
+                    <a href="#">download CV</a>
+                    <i data-feather="download"></i>
+                </div>
+            </div>
+
+            <div class="media-icons">
+                <i data-feather="linkedin" class="icon"></i>
+                <i data-feather="instagram" class="icon"></i>
+                <i data-feather="facebook" class="icon"></i>
+                <i data-feather="twitter" class="icon"></i>
+            </div>
+
+            <div class="photo">
+                <img src="img/photo.jpg" alt="">
+                <div class="profile">
+                    <h3>Dionovan Ramadhani</h3>
+                    <p>Game Developer</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- script -->
+        <script>
+            feather.replace();
+        </script>
+    </section>
+</body>
+</html>
