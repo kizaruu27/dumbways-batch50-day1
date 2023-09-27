@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>Get In Touch</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <li><img src="img/logo.png" alt="logo"></li>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Form -->
+    <form action="">
+        <h1>Get In Touch</h1>
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" id="name" required>
+        </div>
+
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" id="email" required>
+        </div>
+        <div>
+            <label for="number">Number: </label>
+            <input type="number" id="number" required>
+        </div>
+        <div>
+            <label for="selection">Selection</label>
+            <select name="" id="selection">
+                <option hidden>-- Select --</option>
+                <option>Frontend</option>
+                <option>Backend</option>
+                <option>Fullstack</option>
+            </select>
+        </div>
+        <div>
+            <label for="messege">Pesan</label>
+            <textarea name="" id="messege" cols="30" rows="10"></textarea>
+        </div>
+        <div class="button">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

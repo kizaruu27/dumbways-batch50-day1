@@ -1,0 +1,58 @@
+/* Navbar */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap');
+
+* {
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #ebeaea;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+nav ul li .active {
+    color: black;
+    font-weight: bold;
+}
+
+nav img {
+    width: 50px;
+}
+
+.nav-left {
+    flex: 50%;
+}
+
+.nav-right {
+    flex: 50%;
+    text-align: end;
+    margin-right: 25px;
+}
+
+.nav-right a {
+    background-color: black;
+    font-weight: bold;
+    padding: 8px 25px;
+    color: #fff;
+    border-radius: 5px;
+}
