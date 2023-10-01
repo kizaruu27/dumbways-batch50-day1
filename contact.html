@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/contact.css">
     <title>Get In Touch</title>
 </head>
 <body>
@@ -23,7 +23,7 @@
     </nav>
 
     <!-- Form -->
-    <form action="">
+    <form>
         <h1>Get In Touch</h1>
         <div>
             <label for="name">Name: </label>
@@ -36,15 +36,15 @@
         </div>
         <div>
             <label for="number">Number: </label>
-            <input type="number" id="number" required>
+            <input type="text" id="number" required>
         </div>
         <div>
             <label for="selection">Selection</label>
             <select name="" id="selection">
-                <option hidden>-- Select --</option>
-                <option>Frontend</option>
-                <option>Backend</option>
-                <option>Fullstack</option>
+                <option value="" hidden>-- Select --</option>
+                <option value="Frontend">Frontend</option>
+                <option value="Backend">Backend</option>
+                <option value="Fullstack">Fullstack</option>
             </select>
         </div>
         <div>
@@ -52,8 +52,9 @@
             <textarea name="" id="messege" cols="30" rows="10"></textarea>
         </div>
         <div class="button">
-            <button type="submit">Submit</button>
+            <button type="button" onclick="SubmitData()">Submit</button>
         </div>
     </form>
+    <script src="js/contact.js"></script>
 </body>
 </html>
