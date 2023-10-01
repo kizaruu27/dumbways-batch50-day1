@@ -1,0 +1,210 @@
+body {
+    background-color: #dbdbdb;
+}
+
+form {
+    /* Temporary */
+    /* border: 1px solid black;  */
+    margin: 0 auto;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+form div {
+    /* Temporary */
+    /* border: 1px solid black;      */
+    width: 100%;
+    margin: 5px 0;
+}
+
+
+/* Header */
+form .header h1 {
+    text-align: center;
+}
+
+/* Project Name */
+form .project-name-input,
+form .project-date .start-date-input,
+form .description-data,
+form .description-data,
+form .tech
+{
+    display: flex;
+    flex-direction: column;
+}
+
+form .project-name-input label,
+form .project-date .start-date-input label,
+form .project-date .end-date-input label,
+form .description-data label,
+form .upload-image .upload label p
+{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+form .project-name-input input {
+    border: none;
+    margin-top: 6px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Date */
+form .project-date {
+    display: flex;
+}
+
+
+form .project-date .start-date-input input, 
+form .project-date .end-date-input input
+{
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Description */
+form .description-data textarea {
+    resize: none;
+    height: 120px;
+    border-radius: 5px;
+    margin-top: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Technologies */
+
+form .tech .tech-header {
+    font-size: 22px;
+    font-weight: bold;
+    height: 50px;
+}
+
+form .tech .tech-input {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form .tech .tech-input div {
+    width: 40%;
+}
+
+form .tech .tech-input div input {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Upload Image */
+form .upload-image .upload {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form .upload-image .upload .input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    height: 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+
+form .upload-image .upload label input {
+    width: 100%;
+    background: #fff;
+}
+
+/* Button */
+form .button-group {
+    display: flex;
+    justify-content: flex-end;
+}
+
+form .button-group button {
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: black;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+/* My Projects */
+.my-project {
+    background-color: #f4f3f3;
+    padding-top: 40px;
+}
+
+.my-project h1 {
+    text-align: center;
+}
+
+.my-project .projects-container {
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+}
+
+/* Projects Content */
+.project-content {
+    width: 400px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-content img, 
+.project-content p,
+.project-content div
+{
+    width: 90%;
+    margin: 8px auto;
+}
+
+.project-content img {
+    border-radius: 10px;
+}
+
+.project-content h3 {
+    width: 90%;
+    margin: 8px auto;
+}
+
+.project-content h4 {
+    width: 90%;
+    margin: 1px auto;
+    color: #969494;
+}
+
+.project-content .buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.project-content .buttons button {
+    background-color: black;
+    color: #fff;
+    margin: 0 5px;
+    width: 200px;
+    height: 30px;
+    border-radius: 6px;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/project.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>My Project</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <li><img src="img/logo.png" alt="logo"></li>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="project.html">My Projects</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Add My Project -->
+    <form action="">
+        <div class="header">
+            <h1>ADD MY PROJECT</h1>
+        </div>
+
+        <div class="project-name-input">
+            <label for="project-name">Project Name</label>
+            <input type="text" name="" id="project-name">
+        </div>
+
+        <div class="project-date">
+            <div class="start-date-input">
+                <label for="start-date">Start Date</label>
+                <input type="date" name="start-date" id="">
+            </div>
+    
+            <div class="end-date-input">
+                <label for="end-date">End Date</label>
+                <input type="date" name="" id="end-date">
+            </div>
+        </div>
+
+        <div class="description-data">
+            <label for="description">Description</label>
+            <textarea name="" id="description"></textarea>
+        </div>
+
+        <div class="tech">
+            <div class="tech-header">
+                <p>Technologies</p>
+            </div>
+            <div class="tech-input">
+                <div class="node-js-input">
+                    <input type="checkbox" name="tech-checkbox" id="node-js">
+                    <label for="node-js">Node Js</label>
+                </div>
+                <div class="next-js-input">
+                    <input type="checkbox" name="tech-checkbox" id="next-js">
+                    <label for="next-js">Next Js</label>
+                </div>
+                <div class="react-js-input">
+                    <input type="checkbox" name="tech-checkbox" id="react-js">
+                    <label for="react-js">React Js</label>
+                </div>
+                <div class="typescript-input">
+                    <input type="checkbox" name="tech-checkbox" id="typescript">
+                    <label for="typescript">TypeScript</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="upload-image">
+            <div class="upload">
+                <label for="upload">
+                    <p>Upload Image</p>
+                </label>
+                <div class="input">
+                    <input type="file" id="upload">
+                    <i data-feather="paperclip"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button type="button">submit</button>
+        </div>
+    </form>
+
+    <!-- My Project -->
+    <div class="my-project">
+        <h1>My Project</h1>
+        <div class="projects-container">
+            <div class="project-content">
+                <img src="img/agate.jpeg" alt="">
+                <h3>Dumbways Mobile App - 2021</h3>
+                <h4>durasi: 3 bulan</h4>
+                <p>
+                    App that used for dumbways student, it was deployed and can dwonloaded on playstore. Happy Download
+                </p>
+                <div class="icon">
+                    <i data-feather="play"></i>
+                    <i data-feather="box"></i>
+                    <i data-feather="bluetooth"></i>
+                </div>
+                <div class="buttons">
+                    <button>edit</button>
+                    <button>delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Script -->
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
