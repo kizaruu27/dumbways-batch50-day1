@@ -24,7 +24,7 @@
     </nav>
 
     <!-- Add My Project -->
-    <form action="">
+    <form action="" onsubmit="addProject(event)">
         <div class="header">
             <h1>ADD MY PROJECT</h1>
         </div>
@@ -37,7 +37,7 @@
         <div class="project-date">
             <div class="start-date-input">
                 <label for="start-date">Start Date</label>
-                <input type="date" name="start-date" id="">
+                <input type="date" name="" id="start-date">
             </div>
     
             <div class="end-date-input">
@@ -88,15 +88,15 @@
         </div>
 
         <div class="button-group">
-            <button type="button">submit</button>
+            <button>submit</button>
         </div>
     </form>
 
     <!-- My Project -->
     <div class="my-project">
         <h1>My Project</h1>
-        <div class="projects-container">
-            <div class="project-content">
+        <div class="projects-container" id="container">
+            <div class="project-content" >
                 <img src="img/agate.jpeg" alt="">
                 <h3>Dumbways Mobile App - 2021</h3>
                 <h4>durasi: 3 bulan</h4>
@@ -121,5 +121,7 @@
     <script>
         feather.replace();
     </script>
+
+    <script src="js/project.js"></script>
 </body>
 </html>

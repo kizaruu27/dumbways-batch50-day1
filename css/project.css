@@ -150,6 +150,7 @@ form .button-group button {
 /* My Projects */
 .my-project {
     background-color: #f4f3f3;
+    height: 150vh;
     padding-top: 40px;
 }
 
@@ -158,6 +159,8 @@ form .button-group button {
 }
 
 .my-project .projects-container {
+    display: flex;
+    flex-wrap: wrap;
     width: 90%;
     height: 500px;
     margin: 0 auto;
@@ -165,6 +168,7 @@ form .button-group button {
 
 /* Projects Content */
 .project-content {
+    margin: 20px;
     width: 400px;
     background-color: #fff;
     display: flex;
