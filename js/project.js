@@ -6,29 +6,26 @@ function addProject(e) {
     e.preventDefault();
 
     let projectName = document.getElementById("project-name").value;
-    let startDate = document.getElementById("start-date").value;
-    let endDate = document.getElementById("end-date").value;
+    let startDate = new Date(document.getElementById("start-date").value);
+    let endDate = new Date(document.getElementById("end-date").value);
     let description = document.getElementById("description").value;
     let image = document.getElementById("upload").files;
 
     let checkbox = document.getElementsByName("tech-checkbox");
-    let tech= [];
-
-    for (let i = 0; i < tech.length; i++) {
-        if (checkbox[i].checked) {
-            let techOption = checkbox[i].value;
-            tech.push(techOption);
-        }
-    }
 
     image = URL.createObjectURL(image[0]);
-    durationCount(startDate, endDate);
+
+    let diff = endDate - startDate;
+    let days = diff / (1000 * 3600 * 24);
+    let weeks = days / 7;
+    let months = days / 30;
+
 
     let project = {
         projectName,
-        days,
-        month,
-        techProject: tech,
+        days: Math.floor(days),
+        weeks: Math.floor(weeks),
+        months: Math.floor(months),
         description,
         image
     }
@@ -39,23 +36,6 @@ function addProject(e) {
     renderMyProject();
 }
 
-function durationCount(start, end) {
-    let dateStart = new Date(start);
-    let dateEnd = new Date(end);
-    let oneDay = (1000 * 3600 * 24);
-
-    let diff = dateEnd.getTime() - dateStart.getTime();
-    let daysTotal = diff/oneDay;
-    let inAMonth = Math.floor(daysTotal/30);
-    daysTotal = daysTotal % 30;
-
-    days = daysTotal;
-    month = inAMonth;
-
-    console.log(diff);
-    console.log(daysTotal);
-    console.log(inAMonth);
-}
 
 function renderMyProject() {
     document.getElementById("container").innerHTML = ``;
@@ -68,7 +48,7 @@ function renderMyProject() {
                 <div class="project-content" >
                     <img src="${projectData[i].image}" alt="">
                     <h3>${projectData[i].projectName}</h3>
-                    <h4>durasi: 3 bulan</h4>
+                    <h4>durasi: ${projectData[i].months} bulan, ${projectData[i].weeks} minggu, ${projectData[i].days} hari</h4>
                     <p>
                         ${projectData[i].description}
                     </p>
