@@ -213,3 +213,8 @@ form .button-group button {
     height: 30px;
     border-radius: 6px;
 }
+
+.my-project .projects-container .icon img {
+    width: 35px;
+    margin: 0 5px;
+}
