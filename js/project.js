@@ -65,6 +65,36 @@ function addProject(e) {
     else
         typescriptJSIcon = "";
 
+   // get current time
+    let now = new Date();
+
+    // time format
+    let hours = now.getHours().toString().padStart(2,'0');
+    let minutes = now.getMinutes().toString().padStart(2,'0');
+    let time = `${hours}.${minutes}`;
+
+    // date format
+    let day = now.getDate();
+    let monthsArray = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "Mei",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sept",
+        "Oct",
+        "Nov",
+        "Dec"
+    ]
+    let month = monthsArray[now.getMonth()];
+    let year = now.getFullYear();
+    let date = `${day} ${month} ${year}`;
+
+    let postTime = `${time} WIB | ${date}`;
+
 
     let project = {
         projectName,
@@ -74,6 +104,7 @@ function addProject(e) {
         reactJSIcon,
         typescriptJSIcon,
         description,
+        postTime,
         image
     }
 
@@ -105,6 +136,9 @@ function renderMyProject() {
                         ${projectData[i].typescriptJSIcon}
                         ${projectData[i].reactJSIcon}
                     </div>
+                    <div class="time">
+                        <p>${projectData[i].postTime}</p>
+                    </div>
                     <div class="buttons">
                         <button>edit</button>
                         <button>delete</button>
@@ -112,4 +146,8 @@ function renderMyProject() {
                 </div>
             `
     }
+}
+
+function getCurrentDateTime() {
+
 }

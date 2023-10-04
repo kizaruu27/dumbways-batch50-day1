@@ -218,3 +218,9 @@ form .button-group button {
     width: 35px;
     margin: 0 5px;
 }
+
+.my-project .projects-container .project-content .time p {
+    margin: 1px;
+    color: #969494;
+}
+
