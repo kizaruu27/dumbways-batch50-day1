@@ -9,19 +9,32 @@
     <title>My Project</title>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav>
-        <div class="nav-left">
-            <ul>
-                <li><img src="img/logo.png" alt="logo"></li>
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="project.html">My Projects</a></li>
-            </ul>
-        </div>
-        <div class="nav-right">
-            <a href="contact.html">Contact</a>
-        </div>
-    </nav>
+<!-- Navbar -->
+<nav>
+    <div class="nav-left">
+        <ul>
+            <li><img src="img/logo.png" alt="logo"></li>
+            <li><a class="active navbar-content" href="index.html">Home</a></li>
+            <li><a class="navbar-content" href="project.html">My Projects</a></li>
+            <li><a class="navbar-content" href="#">Testimonials</a></li>
+        </ul>
+    </div>
+    <div class="nav-right">
+        <a href="contact.html">Contact Me</a>
+        <button id="bars-menu" onclick="openHamburgerMenu()">
+            <i data-feather="menu"></i>
+        </button>
+    </div>
+</nav>
+
+<div class="hamburger-menu" id="hamburger-menu">
+    <div class="hamburger-container">
+        <a href="index.html">Home</a>
+        <a href="project.html" class="hamburger-active">My Projects</a>
+        <a href="#">Testimonials</a>
+        <a href="contact.html">Contact Me</a>
+    </div>
+</div>
 
     <!-- Add My Project -->
     <form action="" onsubmit="addProject(event)">
@@ -120,12 +133,12 @@
         </div>
     </div>
 
-
     <!-- Script -->
     <script>
         feather.replace();
     </script>
 
+    <script src="js/script.js"></script>
     <script src="js/project.js"></script>
 </body>
 </html>

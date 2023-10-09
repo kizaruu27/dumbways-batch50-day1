@@ -98,7 +98,7 @@ nav img {
     font-weight: bold;
 }
 
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 900px){
     .nav-right a {
         display: none;
     }
