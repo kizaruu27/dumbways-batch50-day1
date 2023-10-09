@@ -121,7 +121,7 @@ function renderMyProject() {
     for (let i = 0; i < projectData.length; i++) {
         console.log(projectData[i]);
 
-        document.getElementById("container").innerHTML +=
+        document.getElementById("container").innerHTML +=  
             `
                 <div class="project-content" >
                     <img src="${projectData[i].image}" alt="">
@@ -147,3 +147,4 @@ function renderMyProject() {
             `
     }
 }
+
