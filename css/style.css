@@ -97,3 +97,28 @@ p {
     text-align: center;
 }
 
+
+/* Handphone */
+@media only screen and (max-width: 550px) {
+
+    section {
+        width: 80%;
+        height: 100%;
+        padding-bottom: 50px;
+    }
+
+    .container {
+        flex-direction: column;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .media-icons {
+        justify-content: center;
+    }
+}
+
+
+
+
+

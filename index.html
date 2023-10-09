@@ -15,14 +15,27 @@
         <div class="nav-left">
             <ul>
                 <li><img src="img/logo.png" alt="logo"></li>
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="project.html">My Projects</a></li>
+                <li><a class="active navbar-content" href="index.html">Home</a></li>
+                <li><a class="navbar-content" href="project.html">My Projects</a></li>
+                <li><a class="navbar-content" href="#">Testimonials</a></li>
             </ul>
         </div>
         <div class="nav-right">
-            <a href="contact.html">Contact</a>
+            <a href="contact.html">Contact Me</a>
+            <button id="bars-menu" onclick="openHamburgerMenu()">
+                <i data-feather="menu"></i>
+            </button>
         </div>
     </nav>
+
+    <div class="hamburger-menu" id="hamburger-menu">
+        <div class="hamburger-container">
+            <a href="#" class="hamburger-active">Home</a>
+            <a href="project.html">My Projects</a>
+            <a href="#">Testimonials</a>
+            <a href="contact.html">Contact Me</a>
+        </div>
+    </div>
 
 
     <!-- Content -->
@@ -65,6 +78,7 @@
         <script>
             feather.replace();
         </script>
+        <script src="js/script.js"></script>
     </section>
 </body>
 </html>

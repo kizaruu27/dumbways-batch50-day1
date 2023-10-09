@@ -147,7 +147,3 @@ function renderMyProject() {
             `
     }
 }
-
-function getCurrentDateTime() {
-
-}
